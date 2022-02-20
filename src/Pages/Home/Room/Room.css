@@ -1,7 +1,12 @@
+.card-element {
+     border: 1px solid #eaeaea;
+     background-color: #f2f2f2;
+     text-align: center;
+     font-size: 20px;
 
+}
 
-
-.room img{
+.room img {
      width: 100% !important;
      height: 100% !important;
 }

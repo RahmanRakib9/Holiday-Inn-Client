@@ -9,9 +9,8 @@ const Room = ({ room }) => {
                <Card style={{ width: '28rem' }} style={{ border: 'none' }}>
                     <Card.Body>
                          <Card.Img variant="top" src={imgUrl} />
-                         <Card.Text style={{ border: '2px solid' }}>
-                              Some quick example text to build on the card title and make up the bulk of
-                              the card's content.
+                         <Card.Text className='card-element'>
+                              {title}
                          </Card.Text>
                     </Card.Body>
                </Card>
@@ -20,6 +19,8 @@ const Room = ({ room }) => {
 };
 
 export default Room;
+
+
 
 
 
