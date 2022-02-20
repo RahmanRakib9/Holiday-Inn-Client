@@ -4,9 +4,9 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 const Header = () => {
      return (
           <>
-               <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" style={{height:'90px'}}>
+               <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
                     <Container>
-                         <Navbar.Brand href="#home">Genius xyzasfkdmidio jsif</Navbar.Brand>
+                         <Navbar.Brand href="#home">Genius Hotel</Navbar.Brand>
                          <Navbar.Toggle />
                          <Navbar.Collapse className="justify-content-end">
                               <Nav.Link to="">Home</Nav.Link>

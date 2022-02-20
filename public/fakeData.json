@@ -1,32 +1,57 @@
 [
      {
-          "title": "Standard Single Room",
-          "description": "Standard Single Rooms are designed in open -concept living area and have many facilities.",
-          "imgUrl": "https://i.ibb.co/W6zsgMn/francesca-tosolini-w1-RE0l-Bb-REo-unsplash.jpg",
+          "title": "Double Room",
+          "imgUrl": "https://i.ibb.co/YyM0xGy/double-720x470.jpg ",
           "bed": "1",
-          "capacity": "1",
-          "bedType": "single",
-          "price": "119",
+          "capacity": "2",
+          "bedType": "Double",
+          "price": "139",
           "id": "1"
      },
      {
-          "title": "Couple Power Room",
-          "description": "Superior Double Rooms are perfectly equipped for traveling couples or friends",
-          "imgUrl": "https://i.ibb.co/fn4jDGL/gus-tu-njana-8-JPrz-RRY4m8-unsplash.jpg",
-          "bed": "1",
-          "capacity": "2",
+          "title": "Family Room",
+          "imgUrl": " https://i.ibb.co/7Jc3mLh/1-720x470.jpg",
+          "bed": "2",
+          "capacity": "4",
           "bedType": "Double",
           "price": "199",
           "id": "2"
      },
      {
-          "title": "Family Capacity Room",
+          "title": "King Room",
           "description": "Have lots of in-room facilities and are designed in open-concept living area.",
-          "imgUrl": "https://i.ibb.co/S6VNBtL/roberto-nickson-r-EJxp-Bskj3-Q-unsplash.jpg",
+          "imgUrl": "https://i.ibb.co/F3wSwWk/king-room-720x470-1.jpg ",
+          "bed": "1",
+          "capacity": "1",
+          "bedType": "Single",
+          "price": "119",
+          "id": "3"
+     },
+     {
+          "title": "Couple Room ",
+          "imgUrl": " https://i.ibb.co/3pLNvs8/honeymoon-720x470.jpg",
+          "bed": "1",
+          "capacity": "2",
+          "bedType": "Double",
+          "price": "249",
+          "id": "4"
+     },
+     {
+          "title": "Deluxe Room",
+          "imgUrl": "https://i.ibb.co/rQc0bmM/room-full-1-720x470.jpg ",
           "bed": "2",
           "capacity": "4",
           "bedType": "Family",
-          "price": "249",
-          "id": "3"
+          "price": "299",
+          "id": "5"
+     },
+     {
+          "title": "Single Room",
+          "imgUrl": "https://i.ibb.co/RNxPdQL/single-720x470.jpg",
+          "bed": "1",
+          "capacity": "4",
+          "bedType": "Single",
+          "price": "109",
+          "id": "6"
      }
 ]

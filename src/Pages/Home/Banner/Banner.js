@@ -24,8 +24,8 @@ const Banner = () => {
                               alt="First slide"
                          />
                          <Carousel.Caption>
-                              <h3 className="animate__animated animate__backInLeft">First slide label</h3>
-                              <p className="animate__animated animate__backInRight">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              <h1 className="animate__animated animate__backInLeft">First slide label</h1>
+                              <h3 className="animate__animated animate__backInRight">Nulla vitae elit libero, a pharetra augue mollis interdum.</h3>
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
