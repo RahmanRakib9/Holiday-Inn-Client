@@ -22,7 +22,7 @@ const Rooms = () => {
                          <h1>OUR FAVORITE ROOMS</h1>
                          <h5>Check out now our best rooms</h5>
                     </header>
-                    <div className='card-container'>
+                    <div className='card-container' id='rooms'>
                          {
                               roomType.map(room => <Room room={room} key={room.id}></Room>)
                          }

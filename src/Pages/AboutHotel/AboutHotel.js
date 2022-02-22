@@ -5,9 +5,9 @@ import './AboutHotel.css'
 
 const AboutHotel = () => {
      return (
-          <section style={{ width: '100%' }}>
+          <section style={{ width: '100%' }} >
                <Container style={{ marginTop: "100px" }} >
-                    <Row>
+                    <Row id='aboutHotel'>
                          <Col className='d-flex justify-content-center align-items-center w-100'>
                               <div>
                                    <h1>HOTEL ZANTE SINCE 1992</h1>

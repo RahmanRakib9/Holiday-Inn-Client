@@ -27,16 +27,20 @@ const Services = () => {
      ]
 
      return (
-          <Container>
-               <section style={{ marginTop: '100px' }}>
-                    <div className='services-container'>
+          <section className='services-section'>
+               <Container>
+
+                    <div className='services-container '>
                          {
                               services.map(x => <Service x={x} key={x.id}></Service>)
                          }
                     </div>
-               </section>
-          </Container>
+
+               </Container>
+          </section>
      );
 };
 
 export default Services;
+
+//d-flex justify-content-center align-items-center

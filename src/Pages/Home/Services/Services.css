@@ -1,3 +1,9 @@
+.services-section {
+     height: 1000px;
+     width: 100%;
+     background: #000;
+}
+
 .services-container {
      display: grid;
      grid-template-columns: repeat(3, 1fr);

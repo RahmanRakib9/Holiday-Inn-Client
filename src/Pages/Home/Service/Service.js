@@ -4,9 +4,11 @@ import './Service.css'
 const Service = ({ x }) => {
      const { name, id, description, imgUrl } = x;
      return (
-          <div className='service'>
-               <img src={imgUrl} alt="" />
-          </div>
+          <section className='justify-content-center align-items-center'>
+               <div className='service'>
+                    <img src={imgUrl} alt="" />
+               </div>
+          </section>
      );
 };
 
