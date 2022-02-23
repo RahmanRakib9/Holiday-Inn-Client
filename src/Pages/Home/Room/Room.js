@@ -17,7 +17,7 @@ const Room = ({ room }) => {
                     <Card.Body >
                          <Card.Img variant="top" src={imgUrl} />
                          <Card.Text className='card-element'>
-                              <button className='book-btn' onClick={() => handleBooking(title)}>Book {title}</button>
+                              <button className='book-btn' onClick={() => handleBooking(id)}>Book {title}</button>
                          </Card.Text>
 
                     </Card.Body>
