@@ -8,7 +8,7 @@ import YtPromotion from '../YtPromotion/YtPromotion';
 
 const Home = () => {
      return (
-          <div>
+          <div id='home'>
                <Banner />
                <AboutHotel />
                <Rooms />
