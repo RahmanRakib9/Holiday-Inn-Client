@@ -28,10 +28,7 @@ const useFirebase = () => {
                     setUser(res.user)
                     navigate(from, { replace: true });
                })
-               .catch((error) => {
-                    console.log(error);
 
-               })
                .finally(() => setIsLoading(false))
      }
 
@@ -42,9 +39,7 @@ const useFirebase = () => {
                .then(() => {
                     setUser({})
                })
-               .catch((error) => {
-                    setUser(error)
-               })
+              
                .finally(() => setIsLoading(false))
      }
 
