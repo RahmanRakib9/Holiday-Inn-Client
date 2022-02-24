@@ -1,10 +1,13 @@
 
 const firebaseConfig = {
-     apiKey: "AIzaSyC_rBWZ7Z88JtL66NPXzlUVKVhUOLPmBxk",
-     authDomain: "holiday-inn-8e26c.firebaseapp.com",
-     projectId: "holiday-inn-8e26c",
-     storageBucket: "holiday-inn-8e26c.appspot.com",
-     messagingSenderId: "175243662994",
-     appId: "1:175243662994:web:a19afce48154724ce8f84b"
+     apiKey: "AIzaSyCuAVJP5EHiyCHBwMDzvYJnwOp_0MriYFs",
+     authDomain: "holiday-inn-99978.firebaseapp.com",
+     projectId: "holiday-inn-99978",
+     storageBucket: "holiday-inn-99978.appspot.com",
+     messagingSenderId: "52977720084",
+     appId: "1:52977720084:web:aa4c31d1fb9505a9a18001"
 };
+
 export default firebaseConfig;
+
+
