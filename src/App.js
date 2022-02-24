@@ -14,8 +14,9 @@ import Header from './Pages/Shared/Header/Header';
 
 const App = () => {
   return (
-    <AuthProvider>
-      <BrowserRouter>
+
+    <BrowserRouter>
+      <AuthProvider>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -24,8 +25,9 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </AuthProvider>
+      </AuthProvider>
+    </BrowserRouter>
+
   );
 };
 

@@ -1,6 +1,9 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
+import { useNavigate, useLocation } from 'react-router-dom'
+
+
 
 initializeAuthentication();
 
@@ -9,15 +12,23 @@ const useFirebase = () => {
 
      const auth = getAuth();
 
+     //for redirect sign in user
+     let navigate = useNavigate();
+     let location = useLocation();
+     let from = location.state?.from?.pathname || "/";
+
+
      //sign in using google
      const signInWithGoogle = () => {
           const googleProvider = new GoogleAuthProvider();
           signInWithPopup(auth, googleProvider)
                .then((res) => {
                     setUser(res.user)
+                    navigate(from, { replace: true });
                })
                .catch((error) => {
                     console.log(error);
+
                })
      }
 
