@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Room.css'
 
 const Room = ({ room }) => {
-     const { title, description, imgUrl, bed, capacity, bedType, price, id } = room;
+     const { roomTitle, description, photo, bed, bedCapacity, bedType, price, _id } = room;
 
      const navigate = useNavigate();
      const handleBooking = (ID) => {
@@ -13,11 +13,11 @@ const Room = ({ room }) => {
 
      return (
           <div className='room'>
-               <Card style={{ width: '28rem' }} style={{ border: 'none' }}>
+               <Card style={{ width: '28rem', border: 'none' }}>
                     <Card.Body >
-                         <Card.Img variant="top" src={imgUrl} />
+                         <Card.Img variant="top" src={`data:image/jpeg;base64,${photo}`} />
                          <Card.Text className='card-element'>
-                              <button className='book-btn' onClick={() => handleBooking(id)}>Book {title}</button>
+                              <button className='book-btn' onClick={() => handleBooking(_id)}>Book {roomTitle}</button>
                          </Card.Text>
 
                     </Card.Body>

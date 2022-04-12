@@ -7,7 +7,7 @@ const Rooms = () => {
      const [roomType, setRoomType] = useState([]);
 
      useEffect(() => {
-          fetch('fakeData.json')
+          fetch('http://localhost:5000/rooms')
                .then(res => res.json())
                .then(data => {
                     setRoomType(data)
@@ -24,7 +24,7 @@ const Rooms = () => {
                     </header>
                     <div className='card-container' id='rooms'>
                          {
-                              roomType.map(room => <Room room={room} key={room.id}></Room>)
+                              roomType.map(room => <Room room={room} key={room._id}></Room>)
                          }
                     </div>
                </div>
