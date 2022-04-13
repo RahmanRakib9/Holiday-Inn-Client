@@ -13,7 +13,10 @@ const AboutHotel = () => {
 
                               <h1>HOLIDAY INN SINCE 1992</h1>
                               <h4>High quality accommodation services</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eveniet sit numquam impedit earum doloribus cum autem quis explicabo dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corporis.</p>
+                              <p>Bright, relaxed rooms feature cable TV and minifridges. Suites add separate living rooms and balconies. Most offer bay views, and 1 has a glass-roof living/dining area. Room service is available 24/7.
+
+                                   Parking is complimentary. There are 6 restaurants and bars, including a rooftop Italian eatery, and a bar beside an outdoor pool. There's also a spa, a gym and direct access to a private beach. Breakfast is available.
+                              </p>
 
                          </Col>
                          <Col className='imageContainer' xs={12} md={6}>
