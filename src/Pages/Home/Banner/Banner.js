@@ -24,20 +24,20 @@ const Banner = () => {
                               alt="First slide"
                          />
                          <Carousel.Caption>
-                              <h1 className="animate__animated animate__backInLeft">First slide label</h1>
-                              <h3 className="animate__animated animate__backInRight">Nulla vitae elit libero, a pharetra augue mollis interdum.</h3>
+                              <h5 className="animate__animated animate__backInLeft" > HOLIDAY INN</h5>
+                              <h6 className="animate__animated animate__backInRight">Welcome to HOLIDAY INN where business and leisure blend together</h6>
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                          <img
+
                               className="d-block w-100 banner-image"
                               src={slider2}
                               alt="Second slide"
                          />
-
                          <Carousel.Caption>
-                              <h3>Second slide label</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              <h5 className="animate__animated animate__backInLeft" >HOLIDAY INN</h5>
+                              <h6 className="animate__animated animate__backInRight">is one of the best standard luxury hotel in Bangladesh</h6>
                          </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -48,8 +48,8 @@ const Banner = () => {
                          />
 
                          <Carousel.Caption>
-                              <h3>Third slide label</h3>
-                              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                              <h5 className="animate__animated animate__backInLeft" >HOLIDAY INN</h5>
+                              <h6 className="animate__animated animate__backInRight">A HEAVENLY PLACE</h6>
                          </Carousel.Caption>
                     </Carousel.Item>
                </Carousel>
