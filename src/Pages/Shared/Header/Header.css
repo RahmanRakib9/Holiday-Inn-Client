@@ -1,3 +1,17 @@
+.link-style{
+     color:black;
+     margin-left: 20px;
+     text-decoration: none;
+     font-size: larger;
+     font-family:Arial, Helvetica, sans-serif;
+}
 .authentication-btn{
      border: none;
+     height: 40px;
+     background-color: #34ebe5;
+     border-radius: 5%;
+     color: white;
+     font-size: larger;
+     font-family:Arial, Helvetica, sans-serif;
+     margin-left: 20px;
 }
