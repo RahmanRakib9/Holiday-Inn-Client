@@ -5,6 +5,9 @@
      font-size: larger;
      font-family:Arial, Helvetica, sans-serif;
 }
+.link-style:hover{
+color: #34ebe5;
+}
 .authentication-btn{
      border: none;
      height: 40px;

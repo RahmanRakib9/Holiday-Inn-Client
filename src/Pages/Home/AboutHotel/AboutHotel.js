@@ -6,7 +6,7 @@ import './AboutHotel.css'
 
 const AboutHotel = () => {
      return (
-          <section style={{ width: '100%' }} >
+          <section style={{ width: '100%' }} id='about'>
                <Container style={{ marginTop: "100px" }} >
                     <Row id='aboutHotel' className='d-flex justify-content-center align-items-center w-100'>
                          <Col xs={12} md={6} className='text-center'>

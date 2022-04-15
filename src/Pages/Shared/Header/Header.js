@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Header.css'
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
      const { user, signInWithGoogle, signOutGoogle } = useAuth();
@@ -10,12 +11,13 @@ const Header = () => {
           <>
                <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
                     <Container>
-                         <Navbar.Brand href="/" style={{ fontSize: 'x-large', color: "black", fontFamily: 'fantasy' }}>Holiday Inn</Navbar.Brand>
+                         <Navbar.Brand href="/home#banner" style={{ fontSize: 'x-large', color: "black", fontFamily: 'fantasy' }}>Holiday Inn</Navbar.Brand>
                          <Navbar.Toggle />
                          <Navbar.Collapse className="justify-content-end">
-                              <Link to='/' className='link-style'>About</Link>
-                              <Link to='/' className='link-style'>Rooms</Link>
+                              <HashLink to='/home#about' className='link-style'>About</HashLink>
+                              <HashLink to='/home#rooms' className='link-style'>Rooms</HashLink>
                               <Link to="/" className='link-style'>Services</Link>
+                              <HashLink to="/home#contact" className='link-style'>Contact</HashLink>
 
                               <Link to='/login'>{user.email ?
                                    <button className='authentication-btn' onClick={signOutGoogle}>Log out</button> :

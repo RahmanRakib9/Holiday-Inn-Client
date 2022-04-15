@@ -15,7 +15,7 @@ const Banner = () => {
           setIndex(selectedIndex);
      };
      return (
-          <section className='carousel'>
+          <section className='carousel' id='banner'>
                <Carousel fade>
                     <Carousel.Item >
                          <img

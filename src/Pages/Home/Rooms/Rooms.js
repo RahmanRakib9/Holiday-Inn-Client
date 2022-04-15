@@ -17,7 +17,7 @@ const Rooms = () => {
 
      return (
           <Container >
-               <div style={{ marginTop: '80px' }} >
+               <div style={{ marginTop: '80px' }} id="rooms">
                     <header style={{ textAlign: 'center' }}>
                          <h1>OUR FAVORITE ROOMS</h1>
                          <h5>Check out now our best rooms</h5>

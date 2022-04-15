@@ -8,8 +8,7 @@ import { faFacebookF, faInstagram, faDiscord, faGithub, faLinkedinIn } from '@fo
 
 const Footer = () => {
      return (
-          <section style={{ marginTop: '80px' }}>
-
+          <section style={{ marginTop: '80px' }} id='contact'>
                <Container>
                     <footer >
                          <Row className='d-flex justify-content-center'>
