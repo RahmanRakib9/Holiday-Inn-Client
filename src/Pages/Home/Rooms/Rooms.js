@@ -17,10 +17,14 @@ const Rooms = () => {
 
      return (
           <Container >
+               <header className='section-header'>
+                    <h1>OUR FAVORITE ROOMS</h1>
+                    <h4>Check out now our best <span style={{ color: "#328ca8" }}>rooms</span></h4>
+               </header>
                <Row >
-                    <div className='card-container'>
+                    <div className='card-container' id='rooms'>
                          {
-                              roomType.map(room => <Room room={room}></Room>)
+                              roomType.map(room => <Room room={room} key={room._id}></Room>)
                          }
                     </div>
                </Row>

@@ -3,13 +3,11 @@
      width: 100%;
 }
 
-/* .book-btn{
-     border: none !important;
-     height: 40px;
-     background-color: #34ebe5 !important;
-     border-radius: 5%;
-     color: white;
-     font-size: larger;
+.room-title{
      font-family:Arial, Helvetica, sans-serif;
-     margin-left: 15px;
-} */
+}
+
+.room-title:hover{
+     color:#328ca8;
+}
+

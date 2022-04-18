@@ -9,7 +9,7 @@ const AboutHotel = () => {
           <section style={{ width: '100%' }} id='about'>
                <Container style={{ marginTop: "100px" }} >
                     <Row id='aboutHotel' className='d-flex justify-content-center align-items-center w-100'>
-                         <Col xs={12} md={6} className='text-center'>
+                         <Col xs={12} md={6} className='text-center' style={{fontFamily:"Arial, Helvetica, sans-serif"}}>
 
                               <h1>HOLIDAY INN SINCE 1992</h1>
                               <h4>High quality accommodation services</h4>

@@ -1,8 +1,14 @@
+.section-header{
+     text-align: center;
+     margin-top: 80px;
+     font-family:Arial, Helvetica, sans-serif;
+}
+
 .card-container {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-gap: 40px;
-     margin-top: 80px;
+     margin-top: 80px !important;
 }
 
 @media only screen and (max-width:688px) {

@@ -20,7 +20,7 @@ const Room = ({ room }) => {
                     <Card.Img className='image' variant="top" src={`data:image/jpeg;base64,${photo}`} />
                     <Card.Body style={{ textAlign: 'center', backgroundColor: "rgb(232,232,232)" }}>
 
-                         <Card.Title>{roomTitle}</Card.Title>
+                         <Card.Title className='room-title'>{roomTitle}</Card.Title>
                          <Card.Text>
                               <Button className='authentication-btn' onClick={() => handleBooking(_id)}>Book {roomTitle} <FontAwesomeIcon icon={faAngleDoubleRight} /></Button>
                          </Card.Text>
