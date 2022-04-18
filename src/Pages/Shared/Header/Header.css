@@ -1,20 +1,20 @@
 .link-style{
      color:black;
-     margin-left: 20px;
+     margin-left: 15px;
      text-decoration: none;
      font-size: larger;
      font-family:Arial, Helvetica, sans-serif;
 }
 .link-style:hover{
-color: #34ebe5;
+color: #328ca8;
 }
 .authentication-btn{
-     border: none;
+     border: none !important;
      height: 40px;
-     background-color: #34ebe5;
+     background-color: #328ca8 !important;
      border-radius: 5%;
      color: white;
      font-size: larger;
      font-family:Arial, Helvetica, sans-serif;
-     margin-left: 20px;
+     margin-left: 15px;
 }

@@ -9,8 +9,9 @@ const Header = () => {
      const { user, signInWithGoogle, signOutGoogle } = useAuth();
      return (
           <>
-               <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
-                    <Container>
+               <Container>
+                    <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" className='w-100 d-flex justify-content-center'>
+
                          <Navbar.Brand href="/home#banner" style={{ fontSize: 'x-large', color: "black", fontFamily: 'fantasy' }}>Holiday Inn</Navbar.Brand>
                          <Navbar.Toggle />
                          <Navbar.Collapse className="justify-content-end">
@@ -26,8 +27,9 @@ const Header = () => {
 
                               <Link to="/register"><button className='authentication-btn'>Sign up</button></Link>
                          </Navbar.Collapse>
-                    </Container>
-               </Navbar>
+
+                    </Navbar>
+               </Container>
           </>
      );
 };
