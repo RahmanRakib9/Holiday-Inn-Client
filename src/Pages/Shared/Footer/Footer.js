@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faDiscord, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+// className='d-flex justify-content-center align-items-center'
 
 const Footer = () => {
      return (
-          <section style={{ marginTop: '80px' }} id='contact'>
+          <section style={{ marginTop: '80px' }} id='contact' >
+               {/* <hr /> */}
                <Container>
                     <footer >
                          <Row className='d-flex justify-content-center'>
@@ -50,7 +52,7 @@ const Footer = () => {
                          </Row>
                     </footer>
                </Container>
-               <hr />
+               {/* <hr /> */}
           </section>
      );
 };
