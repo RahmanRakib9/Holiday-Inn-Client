@@ -13,7 +13,7 @@ const Home = () => {
                <AboutHotel />
                <Rooms />
                <YtPromotion />
-               {/* <Services/> */}
+               <Services/>
                <Footer />
           </div>
      );

@@ -19,7 +19,7 @@ const Rooms = () => {
           <Container >
                <header className='section-header'>
                     <h1>OUR FAVORITE ROOMS</h1>
-                    <h4>Check out now our best <span style={{ color: "#328ca8" }}>rooms</span></h4>
+                    <h6>CHECK OUT NOW OUR BEST <span style={{ color: "#328ca8" }}>ROOMS</span></h6>
                </header>
                <Row >
                     <div className='card-container' id='rooms'>
@@ -34,20 +34,3 @@ const Rooms = () => {
 };
 
 export default Rooms;
-
-
-
-
-{/*  <Container >
-               <Row style={{ marginTop: '80px' }} id="rooms" className='w-100'>
-                    <header style={{ textAlign: 'center' }}>
-                         <h1>OUR FAVORITE ROOMS</h1>
-                         <h5>Check out now our best rooms</h5>
-                    </header>
-                    <div className='card-container'>
-                         {
-                              roomType.map(room => <Room room={room} key={room._id}></Room>)
-                         }
-                    </div>
-               </Row>
-          </Container> */}
