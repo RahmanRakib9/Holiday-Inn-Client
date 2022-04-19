@@ -17,13 +17,14 @@ const Header = () => {
                          <Navbar.Collapse className="justify-content-end">
                               <HashLink to='/home#about' className='link-style'>About</HashLink>
                               <HashLink to='/home#rooms' className='link-style'>Rooms</HashLink>
-                              <Link to="/" className='link-style'>Services</Link>
+                              <HashLink to="/home#services" className='link-style'>Services</HashLink>
                               <HashLink to="/home#contact" className='link-style'>Contact</HashLink>
 
-                              <Link to='/login'>{user.email ?
-                                   <button className='authentication-btn' onClick={signOutGoogle}>Log out</button> :
-                                   <button className='authentication-btn' onClick={signInWithGoogle}>Login</button>
-                              }</Link>
+                              {user.email ?
+                                   <button className='authentication-btn' onClick={signOutGoogle} >Log Out</button> :
+                                   <Link to="/login"><button className='authentication-btn'>Login</button></Link>
+                              }
+
 
                               <Link to="/register"><button className='authentication-btn'>Sign up</button></Link>
                          </Navbar.Collapse>
@@ -35,3 +36,10 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+{/* <Link to='/login'>{user.email ?
+     <button className='authentication-btn' >Log out</button> :
+     <button className='authentication-btn' onClick={signInWithGoogle}>Login</button>
+}</Link> */}

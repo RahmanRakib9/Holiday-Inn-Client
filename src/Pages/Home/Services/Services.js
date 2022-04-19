@@ -39,7 +39,7 @@ const Services = () => {
                          <h1 style={{}}>HOTEL SERVICE</h1>
                          <h6>OUR AWESOME SERVICES</h6>
                     </header>
-                    <div className='services-container '>
+                    <div className='services-container' id='services'>
                          {
                               services.map(x => <Service x={x} key={x.id}></Service>)
                          }
