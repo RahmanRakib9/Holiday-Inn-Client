@@ -51,6 +51,7 @@ const Register = () => {
                     {isLoading && <Spinner animation="border" className='spinner-style' />}
 
                     {user.email && <Alert variant='success'>Account Created Successfully</Alert>}
+
                     {authError && <Alert variant='danger'>{authError}</Alert>}
 
                </Container>

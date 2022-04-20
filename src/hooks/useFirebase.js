@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -13,8 +13,6 @@ const useFirebase = () => {
      const [isLoading, setIsLoading] = useState(true);
 
      const auth = getAuth();
-
-
 
      //create user with email and password
      const registerUser = (name, email, password) => {
@@ -32,6 +30,22 @@ const useFirebase = () => {
 
      }
 
+     //sign in user with email and password 
+     const signIn = (email, password) => {
+          setIsLoading(true);
+          signInWithEmailAndPassword(auth, email, password)
+               .then((res) => {
+                    setAuthError('')
+               })
+               .catch((error) => {
+                    setAuthError(error.message)
+               })
+               .finally(() => setIsLoading(false))
+
+     }
+
+
+
 
 
      //for redirect sign in user
@@ -40,7 +54,7 @@ const useFirebase = () => {
      let from = location.state?.from?.pathname || "/";
 
 
-     //sign in using google
+     //sign in user using google
      const signInWithGoogle = () => {
           setIsLoading(true)
           const googleProvider = new GoogleAuthProvider();
@@ -56,7 +70,7 @@ const useFirebase = () => {
                .finally(() => setIsLoading(false))
      }
 
-     //sign out using google
+     //sign out user using google
      const signOutGoogle = () => {
           setIsLoading(true);
           signOut(auth)
@@ -91,7 +105,8 @@ const useFirebase = () => {
           signInWithGoogle,
           signOutGoogle,
           registerUser,
-          authError
+          authError,
+          signIn
      }
 
 }
