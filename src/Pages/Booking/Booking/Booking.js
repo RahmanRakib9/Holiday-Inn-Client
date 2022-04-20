@@ -1,12 +1,22 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Booking = () => {
-     const { RoomType } = useParams();
+     const { id } = useParams();
+     const [booking, setBooking] = useState({});
+
+     useEffect(() => {
+          fetch(`http://localhost:5000/rooms/${id}`)
+               .then(res => res.json())
+               .then(data => {
+                    console.log(data);
+               })
+     }, [])
+
      return (
           <div>
-               <h1>this is booking {RoomType}</h1>
-               <Link to='/'>back</Link>
+               <h1>this is {id}</h1>
+               
           </div>
      );
 };

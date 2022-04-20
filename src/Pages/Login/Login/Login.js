@@ -39,11 +39,17 @@ const Login = () => {
                          <Button className='authentication-btn' type='submit'>Login</Button><br />
                          <HashLink to='/register' className='link-style register-login-navigate'>New User?Please Register</HashLink>
                     </Form>
-                    {isLoading && <Spinner animation="border" className='spinner-style' />}
+                    <div style={{ textAlign: "center" }}>
+                         {isLoading && <Spinner animation="border" className='spinner-style' />}
+                    </div>
 
                     {user?.email && <Alert variant='success'>Login Successfully</Alert>}
 
                     {authError && <Alert variant='danger'>{authError}</Alert>}
+
+                    <div style={{ textAlign: "center" }}>
+                         <Button className='authentication-btn' onClick={signInWithGoogle}>OR LOGIN WITH GOOGLE</Button>
+                    </div>
 
                </Container>
                <div style={{ marginTop: '15%' }}>

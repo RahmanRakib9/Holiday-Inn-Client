@@ -4,7 +4,6 @@ import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 import { useNavigate, useLocation } from 'react-router-dom'
 
 
-
 initializeAuthentication();
 
 const useFirebase = () => {
@@ -13,6 +12,11 @@ const useFirebase = () => {
      const [isLoading, setIsLoading] = useState(true);
 
      const auth = getAuth();
+
+     //for redirect sign in user
+     let navigate = useNavigate();
+     let location = useLocation();
+     let from = location.state?.from?.pathname || "/";
 
      //create user with email and password
      const registerUser = (name, email, password) => {
@@ -43,16 +47,6 @@ const useFirebase = () => {
                .finally(() => setIsLoading(false))
 
      }
-
-
-
-
-
-     //for redirect sign in user
-     let navigate = useNavigate();
-     let location = useLocation();
-     let from = location.state?.from?.pathname || "/";
-
 
      //sign in user using google
      const signInWithGoogle = () => {
@@ -97,7 +91,6 @@ const useFirebase = () => {
           });
           return () => unsubscribed;
      }, [auth])
-
 
      return {
           user,

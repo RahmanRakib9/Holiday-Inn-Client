@@ -8,7 +8,7 @@ const PrivateRoute = ({ children }) => {
 
      //
      if (isLoading) {
-          return <Spinner animation="grow" />
+          return <Spinner animation="border" className='spinner-style' />
      }
 
      //Check if the user is logged in

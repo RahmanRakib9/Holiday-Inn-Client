@@ -11,7 +11,7 @@ const Rooms = () => {
                .then(res => res.json())
                .then(data => {
                     setRoomType(data)
-                    console.log(data);
+                    // console.log(data);
                })
      }, [])
 
