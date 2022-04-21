@@ -10,7 +10,7 @@ const Header = () => {
      return (
           <>
                <Container>
-                    <Navbar bg="light" variant="light" collapseOnSelect expand="lg" className='w-100 d-flex justify-content-center'>
+                    <Navbar variant="light" collapseOnSelect expand="lg" className='w-100 d-flex justify-content-center'>
 
                          <Navbar.Brand href="/home#banner" style={{ fontSize: 'x-large', color: "black", fontFamily: 'fantasy' }}>Holiday Inn</Navbar.Brand>
                          <Navbar.Toggle />
