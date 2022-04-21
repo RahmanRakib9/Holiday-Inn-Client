@@ -40,12 +40,15 @@ const Booking = () => {
                                    <span className='room-element'><FontAwesomeIcon icon={faBed} /> Bed-Type: {booking.bedType}</span>
                                    <span className='room-element'><FontAwesomeIcon icon={faPerson} /> Bed-Capacity: {booking.bedCapacity}</span>
                               </div>
+                              <div style={{fontSize:'medium', fontFamily: "font-family:Arial, Helvetica, sans-serif" }}>
+                                   <p>{booking.description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio tenetur, non consequuntur provident sapiente et ullam natus quos perferendis. </p>
+                              </div>
                          </Col>
                          <Col xs={12} md={5} className='d-flex justify-content-center align-items-center'>
                               <Complimentary />
                          </Col>
                     </Row>
-                   
+
                </Container>
           </section>
      );
@@ -53,8 +56,3 @@ const Booking = () => {
 
 export default Booking;
 
-
-// bedType: "double"
-// description: "this is double room"
-// price: "020"
-// bedCapacity: "2"
