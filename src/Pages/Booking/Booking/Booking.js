@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import './Booking.css'
 import Complimentary from './Complimentary';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faPerson } from '@fortawesome/free-solid-svg-icons'
+import BookingTable from './BookingTable';
+import Footer from '../../Shared/Footer/Footer';
 
 const Booking = () => {
      const { id } = useParams();
@@ -40,7 +42,7 @@ const Booking = () => {
                                    <span className='room-element'><FontAwesomeIcon icon={faBed} /> Bed-Type: {booking.bedType}</span>
                                    <span className='room-element'><FontAwesomeIcon icon={faPerson} /> Bed-Capacity: {booking.bedCapacity}</span>
                               </div>
-                              <div style={{fontSize:'medium', fontFamily: "font-family:Arial, Helvetica, sans-serif" }}>
+                              <div style={{ fontSize: 'medium', fontFamily: "font-family:Arial, Helvetica, sans-serif" }}>
                                    <p>{booking.description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio tenetur, non consequuntur provident sapiente et ullam natus quos perferendis. </p>
                               </div>
                          </Col>
@@ -50,6 +52,15 @@ const Booking = () => {
                     </Row>
 
                </Container>
+               <section style={{ marginTop: "30px" }}>
+                    <Container>
+                         <BookingTable booking={booking}></BookingTable>
+                    </Container>
+               </section>
+               <section style={{ marginTop: "80px" }}>
+                    <hr />
+                    <Footer></Footer>
+               </section>
           </section>
      );
 };
