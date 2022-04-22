@@ -5,7 +5,7 @@ import '../../Shared/Header/Header.css'
 const BookingTable = ({ booking }) => {
      const { bedType, price } = booking;
      return (
-          <section style={{ textAlign: 'center' }}>
+          <section style={{ textAlign: 'center', fontFamily: 'Arial, Helvetica, sans-serif' }}>
                <Table striped bordered hover>
                     <thead>
                          <tr>
