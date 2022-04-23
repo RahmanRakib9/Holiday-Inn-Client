@@ -3,7 +3,7 @@ import { Button, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../../Shared/Header/Header.css'
 
-const BookingTable = ({ booking, handleBookingData }) => {
+const BookingTable = ({ booking }) => {
      const { bedType, price, _id } = booking;
 
      return (
