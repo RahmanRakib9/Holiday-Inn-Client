@@ -17,9 +17,10 @@ const Booking = () => {
                .then(res => res.json())
                .then(data => {
                     setBooking(data)
-                    console.log(data);
+                    // console.log(data);
                })
-     }, [])
+     }, []);
+
 
      return (
           <section >
@@ -54,7 +55,7 @@ const Booking = () => {
                </Container>
                <section style={{ marginTop: "30px" }}>
                     <Container>
-                         <BookingTable booking={booking}></BookingTable>
+                         <BookingTable booking={booking} ></BookingTable>
                     </Container>
                </section>
                <section style={{ marginTop: "80px" }}>

@@ -1,9 +1,11 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../Shared/Header/Header.css'
 
-const BookingTable = ({ booking }) => {
-     const { bedType, price } = booking;
+const BookingTable = ({ booking, handleBookingData }) => {
+     const { bedType, price, _id } = booking;
+
      return (
           <section style={{ textAlign: 'center', fontFamily: 'Arial, Helvetica, sans-serif' }}>
                <Table striped bordered hover>
@@ -18,7 +20,9 @@ const BookingTable = ({ booking }) => {
                          <tr>
                               <td>{bedType}</td>
                               <td>{price}৳</td>
-                              <td><button className='authentication-btn'>Book</button></td>
+                              <td><Link to={`/shipment/${_id}`}>
+                                   <Button className='authentication-btn' >Book</Button>
+                              </Link></td>
                          </tr>
                     </tbody>
                </Table>
