@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-
+import './ShipmentForm.css';
 
 const ShipmentForm = () => {
      const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -8,28 +8,39 @@ const ShipmentForm = () => {
 
 
      return (
-          <div>
+          <div className='d-flex justify-content-center'>
                <form onSubmit={handleSubmit(onSubmit)}>
 
-                    <h1>Enter personal information</h1>
+                    <section>
+                         <h1>Make A Reservation</h1>
+                         <label htmlFor="checkIn">Check In</label>
+                         <input type="date" id='checkIn' className='form-control' />
 
-                    <p>Email</p>
-                    <input type='email' {...register("email", { required: true })} />
+                         <label htmlFor="checkOut">Check Out</label>
+                         <input type="date" id='checkOut' className='form-control' />
+                    </section>
 
-                    <p>Phone Number</p>
-                    <input type='number' {...register("phone", { required: true })} />
+                    <section className='mt-5'>
+                         <h1>Enter personal information</h1>
 
-                    <p>Country</p>
-                    <input defaultValue="Bangladesh" {...register("Bangladesh", { required: true })} disabled />
+                         <p>Email</p>
+                         <input type='email' {...register("email", { required: true })} className='form-control' />
 
-                    <p>Current Address</p>
-                    <input type='text' {...register("address", { required: true })} />
+                         <p>Phone Number</p>
+                         <input type='number' {...register("phone", { required: true })} className='form-control' />
 
-                    <p>Zip Code</p>
-                    <input type='number' {...register("number", { required: true })} />
+                         <p>Country</p>
+                         <input defaultValue="Bangladesh" {...register("Bangladesh", { required: true })} className='form-control' disabled />
 
-                    <p>City</p>
-                    <input type='text' {...register("text", { required: true })} />
+                         <p>Current Address</p>
+                         <input type='text' {...register("address", { required: true })} className='form-control' />
+
+                         <p>Zip/Postal code</p>
+                         <input type='number' {...register("number", { required: true })} className='form-control' />
+
+                         <p>City</p>
+                         <input type='text' {...register("text", { required: true })} className='form-control' /><br />
+                    </section>
 
 
                     <input type="submit" />

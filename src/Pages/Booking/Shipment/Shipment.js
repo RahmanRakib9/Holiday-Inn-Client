@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import ShipmentForm from './ShipmentForm';
+import './ShipmentForm.css';
 
 const Shipment = () => {
      const { id } = useParams();
@@ -19,10 +21,23 @@ const Shipment = () => {
 
 
      return (
-          <div>
-               {/* <h1>hi shipment {id}</h1> */}
-               <ShipmentForm />
-          </div>
+          <Container>
+               <Row className='w-100 mt-5' >
+                    <Col xs={12} md={7}>
+                         <ShipmentForm />
+                    </Col>
+                    <Col xs={12} md={5} className='d-flex justify-content-center align-items-center'>
+                         <div >
+
+                              <img style={{ width: '100%' }} src={`data:image/jpeg;base64,${shipment.photo}`} alt="" />
+                              <div className='d-flex justify-content-around'>
+                                   <h6>{shipment.roomTitle}</h6>
+                                   <h6>BDT TAKA {shipment.price}</h6>
+                              </div>
+                         </div>
+                    </Col>
+               </Row>
+          </Container>
      );
 };
 
