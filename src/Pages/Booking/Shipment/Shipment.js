@@ -15,7 +15,7 @@ const Shipment = () => {
                .then(res => res.json())
                .then(data => {
                     setShipment(data)
-                    console.log(data);
+                    // console.log(data);
                })
      }, [])
 
@@ -24,7 +24,7 @@ const Shipment = () => {
           <Container>
                <Row className='w-100 mt-5' >
                     <Col xs={12} md={7}>
-                         <ShipmentForm />
+                         <ShipmentForm shipment={shipment}></ShipmentForm>
                     </Col>
                     <Col xs={12} md={5} className='d-flex justify-content-center align-items-center'>
                          <div >
