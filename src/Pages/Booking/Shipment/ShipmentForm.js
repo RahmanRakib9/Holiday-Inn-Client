@@ -2,14 +2,18 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import './ShipmentForm.css';
 import useAuth from '../../../hooks/useAuth'
+import { Link, useNavigate } from 'react-router-dom';
 
 const ShipmentForm = ({ shipment }) => {
-     const { roomTitle, price } = shipment;
+     const { roomTitle, price, _id } = shipment;
      const { register, formState: { errors }, reset } = useForm();
      const { user } = useAuth();
+     // console.log(_id);
 
      const initialInfo = { checkIn: '', checkOut: '', userName: user.displayName, email: user.email, phone: '', country: '', address: '', zip: null, city: '' }
-     const [userInfo, setUserInfo] = useState(initialInfo)
+     const [userInfo, setUserInfo] = useState(initialInfo);
+     let navigate = useNavigate();
+     
 
      //get input value and them into state
      const handleBlur = e => {
@@ -38,7 +42,10 @@ const ShipmentForm = ({ shipment }) => {
           })
                .then(res => res.json())
                .then(data => {
-                    e.target.reset();
+                    if (data.insertedId) {
+                         // e.target.reset();
+                         navigate(`/shipment/${_id}/billing`)
+                    }
                })
 
 
