@@ -17,9 +17,9 @@ const Booking = () => {
                .then(res => res.json())
                .then(data => {
                     setBooking(data)
-                    // console.log(data);
+                    console.log('dataaaaaa',data);
                })
-     }, []);
+     }, [id]);
 
 
      return (

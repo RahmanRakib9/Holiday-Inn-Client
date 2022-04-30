@@ -28,8 +28,8 @@ const App = () => {
           <Route path='/book/:id' element={<Booking />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/shipment/:id' element={<PrivateRoute>{<Shipment />}</PrivateRoute>} />
-          <Route path='/shipment/:id/billing' element={<PrivateRoute>{<Billing />}</PrivateRoute>} />
+          {/* <Route path='/shipment/:id' element={<PrivateRoute>{<Shipment />}</PrivateRoute>} /> */}
+          {/* <Route path='/shipment/:id/billing' element={<PrivateRoute>{<Billing />}</PrivateRoute>} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
         {/* <Footer /> */}

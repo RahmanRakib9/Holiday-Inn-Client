@@ -9,7 +9,6 @@ const Shipment = () => {
      const [shipment, setShipment] = useState({});
 
 
-
      useEffect(() => {
           fetch(`http://localhost:5000/shipment/${id}`)
                .then(res => res.json())
@@ -28,7 +27,6 @@ const Shipment = () => {
                     </Col>
                     <Col xs={12} md={5} className='d-flex justify-content-center align-items-center'>
                          <div >
-
                               <img style={{ width: '100%' }} src={`data:image/jpeg;base64,${shipment.photo}`} alt="" />
                               <div className='d-flex justify-content-around'>
                                    <h6>{shipment.roomTitle}</h6>

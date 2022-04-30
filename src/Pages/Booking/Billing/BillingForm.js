@@ -1,62 +1,89 @@
-import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import React from 'react';
+// import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
+// import React, { useEffect, useState } from 'react';
 
-const BillingForm = ({ billingFor }) => {
-     console.log(billingFor);
-     const stripe = useStripe();
-     const elements = useElements();
+// const BillingForm = ({ billingFor }) => {
+//      const { price } = billingFor;
+//      console.log(price);
+//      const stripe = useStripe();
+//      const elements = useElements();
+//      const [error, setError] = useState('');
+//      const [clientSecret, setClientSecret] = useState('');
 
-     const handleSubmit = async (event) => {
+//      useEffect(() => {
+//           fetch('http://localhost:5000/create-payment-intent', {
+//                method: 'POST',
+//                headers: {
+//                     'content-type': 'application/json'
+//                },
+//                body: JSON.stringify({ price})
+//           })
+//                .then(res => res.json())
+//                .then(data => {
+//                     console.log(data);
+//                })
+//      }, [])
 
-          event.preventDefault();
+//      const handleSubmit = async (event) => {
 
-          if (!stripe || !elements) {
-               return;
-          }
+//           event.preventDefault();
 
-          const card = elements.getElement(CardElement);
+//           if (!stripe || !elements) {
+//                return;
+//           }
 
-          if (card == null) {
-               return;
-          }
+//           const card = elements.getElement(CardElement);
 
-          const { error, paymentMethod } = await stripe.createPaymentMethod({
-               type: 'card',
-               card,
-          });
+//           if (card == null) {
+//                return;
+//           }
 
-          if (error) {
-               console.log('[error]', error);
-          } else {
-               console.log('[PaymentMethod]', paymentMethod);
-          }
-     };
+//           const { error, paymentMethod } = await stripe.createPaymentMethod({
+//                type: 'card',
+//                card,
+//           });
 
-     return (
-          <div>
-               <form onSubmit={handleSubmit}>
-                    <CardElement
-                         options={{
-                              style: {
-                                   base: {
-                                        fontSize: '16px',
-                                        color: '#424770',
-                                        '::placeholder': {
-                                             color: '#aab7c4',
-                                        },
-                                   },
-                                   invalid: {
-                                        color: '#9e2146',
-                                   },
-                              },
-                         }}
-                    />
-                    <button type="submit" disabled={!stripe}>
-                         Pay
-                    </button>
-               </form>
-          </div>
-     );
-};
+//           if (error) {
+//                setError(error.message)
+//           } else {
+//                setError('')
+//                console.log('[PaymentMethod]', paymentMethod);
+//           }
+//      };
 
-export default BillingForm;
+//      return (
+//           <div>
+//                <form onSubmit={handleSubmit}>
+//                     <CardElement
+//                          options={{
+//                               style: {
+//                                    base: {
+//                                         fontSize: '16px',
+//                                         color: '#424770',
+//                                         '::placeholder': {
+//                                              color: '#aab7c4',
+//                                         },
+//                                    },
+//                                    invalid: {
+//                                         color: '#9e2146',
+//                                    },
+//                               },
+//                          }}
+//                     />
+//                     <button type="submit" disabled={!stripe}>
+//                          {`Pay ${price}`} BDT TAKA
+//                     </button>
+//                </form>
+//                {
+//                     error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>
+//                }
+//           </div>
+//      );
+// };
+
+// export default BillingForm;
+
+
+// //2 digit for future month
+// //2 digit for future year
+// //any 3 digits for cvc
+// //zip code atleast 5 digits
