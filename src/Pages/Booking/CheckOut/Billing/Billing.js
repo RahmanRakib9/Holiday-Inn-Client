@@ -31,11 +31,16 @@ const Billing = () => {
                                    <BillingForm billing={billing}></BillingForm>
                               </Elements>
                          </Col>
-                         <Col xs={12} md={4} style={{alignItems:'center'}}>
+                         <Col xs={12} md={4} style={{ alignItems: 'center' }}>
                               <h5>Booking Summery</h5>
                               <p>Pay for {billing.roomTitle}</p>
                               <p>Bed Capacity: {billing.bedCapacity} person</p>
                               <p>Total Amount: BDT {billing.price} Taka</p>
+                              <div>
+                                   <small>Example Visa Card Number is 4242424242424242</small><br />
+                                   <small>Card Verification Code (cvc) must be any random 3 digits</small><br />
+                                   <small>Any Future Date</small>
+                              </div>
                          </Col>
                     </Row>
                </section>

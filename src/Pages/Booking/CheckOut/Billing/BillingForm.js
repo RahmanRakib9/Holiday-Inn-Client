@@ -42,7 +42,7 @@ const BillingForm = ({ billing }) => {
 
      return (
           <Container >
-               <section >
+               <section>
                     <form onSubmit={handleSubmit}>
                          <CardElement
                               options={{
@@ -68,6 +68,7 @@ const BillingForm = ({ billing }) => {
                     {
                          success && <p style={{ textAlign: 'center', color: 'green' }}>Payment Method Successful</p>
                     }
+                   
                </section>
           </Container>
      );
