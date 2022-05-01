@@ -20,7 +20,7 @@ const BookingTable = ({ booking }) => {
                          <tr>
                               <td>{bedType}</td>
                               <td>{price}৳</td>
-                              <td><Link to={`/shipment/${_id}`}>
+                              <td><Link to={`/book/${_id}/checkout`}>
                                    <Button className='authentication-btn' >Book</Button>
                               </Link></td>
                          </tr>
