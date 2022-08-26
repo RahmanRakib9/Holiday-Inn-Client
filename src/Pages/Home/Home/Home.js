@@ -10,11 +10,11 @@ const Home = () => {
      return (
           <div id='home'>
                <Banner />
-               <AboutHotel />
+               {/* <AboutHotel />
                <Rooms />
                <YtPromotion />
                <Services/>
-               <Footer />
+               <Footer /> */}
           </div>
      );
 };

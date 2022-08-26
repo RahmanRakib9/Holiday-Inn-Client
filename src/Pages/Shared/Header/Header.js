@@ -36,10 +36,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-{/* <Link to='/login'>{user.email ?
-     <button className='authentication-btn' >Log out</button> :
-     <button className='authentication-btn' onClick={signInWithGoogle}>Login</button>
-}</Link> */}
