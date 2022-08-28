@@ -8,13 +8,13 @@ import AboutHotel from '../AboutHotel/AboutHotel';
 
 const Home = () => {
      return (
-          <div id='home'>
+          <div id='home' className='container'>
                <Banner />
-               {/* <AboutHotel />
+               <AboutHotel />
                <Rooms />
                <YtPromotion />
                <Services/>
-               <Footer /> */}
+               <Footer />
           </div>
      );
 };

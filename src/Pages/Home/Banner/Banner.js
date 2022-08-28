@@ -1,8 +1,8 @@
 import slider1 from "../../../images/s1.jpg";
-import slider2 from "../../../images/s2.jpg";
-import slider3 from "../../../images/s3.jpg";
-import "./Banner.css";
-import "animate.css";
+// import slider2 from "../../../images/s2.jpg";
+// import slider3 from "../../../images/s3.jpg";
+// import "./Banner.css";
+// import "animate.css";
 
 const Banner = () => {
   return (

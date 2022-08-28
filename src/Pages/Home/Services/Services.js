@@ -35,7 +35,7 @@ const Services = () => {
      return (
           <section className='services-section'>
                <Container>
-                    <header style={{ textAlign: 'center', fontFamily: "Arial, Helvetica, sans-serif", marginTop: "80px" }}>
+                    <header style={{ textAlign: 'center', fontFamily: "Arial, Helvetica, sans-serif", marginTop: "40px" }}>
                          <h1 style={{}}>HOTEL SERVICE</h1>
                          <h6>OUR AWESOME SERVICES</h6>
                     </header>
