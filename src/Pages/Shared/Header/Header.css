@@ -1,20 +1,20 @@
-.link-style{
-     color:black;
-     margin-left: 10px;
-     text-decoration: none;
-     /* font-size: larger; */
-     font-family:Arial, Helvetica, sans-serif;
+.link-style {
+  color: black;
+  margin-left: 10px;
+  text-decoration: none;
+  /* font-size: larger; */
+  font-family: Arial, Helvetica, sans-serif;
 }
-.link-style:hover{
-color: #328ca8;
+.link-style:hover {
+  color: #328ca8;
 }
-.authentication-btn{
-     border: none !important;
-     height: 30px;
-     background-color: #328ca8 !important;
-     border-radius: 5%;
-     color: white;
-     /* font-size: larger; */
-     font-family:Arial, Helvetica, sans-serif;
-     margin-left: 15px;
+.authentication-btn {
+  border: none !important;
+  height: 30px;
+  background-color: #328ca8 !important;
+  border-radius: 5%;
+  color: white;
+  /* font-size: larger; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
 }
